@@ -1,0 +1,35 @@
+package DTO.NguoiDung;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.time.LocalDateTime;
+
+@Data
+/************************************************************
+ * @Data = @Setter + @Getter + @RequiredArgsConstructor + .....
+ *          @Setter: Lombok tự động viết toàn bộ Setter cho class
+ *          @Getter: Lombok tự động viết toàn bộ Getter cho class
+ *          @RequiredArgsConstructor: Dùng để tạo các constructor có các tham số chỉ định
+ *              Sử dụng @NonNull để chỉ định trường đặc biệt
+ *******************************************/
+@NoArgsConstructor
+@AllArgsConstructor
+public class NguoiDungDTO {
+
+    private Integer maNguoiDung;
+
+    private String hoVaTen;
+
+    private LocalDateTime ngaySinh;
+
+    private String gioiTinh;
+
+    private String soDienThoai;
+
+    private String diaChi;
+
+    private String email;
+
+}
